@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "name": "canon1",
+      "display_name": "Canon_S20",
+      "description": "Smallest true zoom 2 MP camera when released"
+    },
+    {
+      "name": "canon1",
+      "display_name": "Canon_S20",
+      "description": "Smallest true zoom 2 MP camera when released",
+      "_id": "TEGRRRB"
+    },
+    {
+      "name": "Koromon",
+      "apiId": "v1",
+      "_id": "qAaWOS-"
+    },
+    {
+      "name": "canon",
+      "apiId": "v1",
+      "_id": "8TtTLsn"
+    }
+  ],
+  "products": [
+    {
+      "_id": "1",
+      "category": "S10",
+      "name": "canon",
+      "display_name": "Canon_S10",
+      "description": "Smallest true zoom 2 MP camera when released"
+    }
+  ]
+}
