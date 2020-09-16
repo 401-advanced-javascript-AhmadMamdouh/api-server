@@ -1,24 +1,29 @@
 const loggerMiddleware = require('../middleware/logger.js');
 
-describe('logger Middleware', ()=> {
-    
+describe('logger Middleware', () => {
+
     let consoleSpy;
-    beforeEach(()=> {
+    beforeEach(() => {
         consoleSpy = jest.spyOn(console, 'log').mockImplementation();
     });
 
-    afterEach(()=> {
+    afterEach(() => {
         // put back the implementation of console.log
         consoleSpy.mockRestore();
     });
-    
+
     let req = {};
     let res = {};
     let next = jest.fn();
 
-    it('properly logs requests', ()=> {
+    it('properly logs requests', () => {
         loggerMiddleware(req, res, next);
         expect(consoleSpy).toHaveBeenCalled();
-    }); 
-    
+    });
+
+    it('moves to the next middleware', () => {
+        loggerMiddleware(req, res, next);
+        expect(next).toHaveBeenCalledWith();
+    });
+
 });
