@@ -7,6 +7,6 @@ describe('Timestamp Middleware', () => {
 
   it('moves to the next middleware', () => {
     timestampMiddleware(req, res, next);
-    expect(next).toHaveBeenCalledWith(); 
+    expect(next).toHaveBeenCalledWith();
   });
 });

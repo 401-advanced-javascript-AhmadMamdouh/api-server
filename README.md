@@ -15,3 +15,5 @@ nodemon
 
 
 ## UML : see the image Attached 
+![WRRC](UML_API_server.jpg)
+![UML](class09UML.jpg)
