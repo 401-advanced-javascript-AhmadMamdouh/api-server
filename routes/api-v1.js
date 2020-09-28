@@ -16,11 +16,11 @@ router.delete('/:model/:id', timestamp, logger, deleteHandler);
 
 function getAllhandler(req, res, next) {
   req.model.get().then((data)=> res.json(data))
-    .catch((err)=> next(err.message));   
+    .catch((err)=> next(err.message));
 }
 function getOneHandler(req, res, next) {
   req.model.get(req.params.id).then((data)=> res.json(data))
-    .catch(next); 
+    .catch(next);
 }
 function postHandler(req, res, next) {
   req.model.create(req.body).then(data=> res.json(data))
@@ -29,11 +29,11 @@ function postHandler(req, res, next) {
 }
 function editHandler(req, res, next) {
   req.model.update(req.params.id, req.body).then(data=> res.json(data))
-    .catch(next); 
+    .catch(next);
 }
 function deleteHandler(req, res, next) {
   req.model.delete(req.params.id).then(data=> res.json(data))
-    .catch(next);  
+    .catch(next);
 }
 
 module.exports = router;
